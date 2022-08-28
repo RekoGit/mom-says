@@ -1,0 +1,22 @@
+{
+  "name": "MomSays",
+  "description": "YouTube見過ぎの子どもにお母さんの言葉で注意を促します",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
