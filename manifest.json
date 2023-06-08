@@ -6,13 +6,11 @@
   "icons": {
     "128": "icon.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.youtube.com/*"
+        //"https://www.youtube.com/*"
+        "https://twitter.com/*"
       ],
       "js": [
         "content.js"
